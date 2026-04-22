@@ -37,60 +37,165 @@
             <b>Modele:</b> W204 (S204 / Break)<br />
             <b>Moteur:</b> C200 CDI<br />
             <b>Annee:</b> 2008<br />
-            <b>Phase:</b> 1
+            <b>Phase:</b> 1<br />
+            <b>Kilometrage:</b> 408139 km
           </div>
           <div class="photo-voiture">
             <img src="img/photo.jpeg" alt="Ma C200 CDI Break" />
           </div>
         </aside>
 
-        <main>
+        <main id="main-content">
           <article>
-            <h2>L'Enfer des Logiciels de Diag Mercedes</h2>
+            <h2>Coding : Affichage des litres restants (HEX)</h2>
             <div class="date">
               Poste le 22 Avril 2026 par Admin | Categorie: Software
             </div>
             <div class="article-content">
               <p>
-                Salut a tous. Si vous etes ici, c'est que vous avez probablement
-                passe des heures a chercher comment faire fonctionner Xentry,
-                Vediamo ou DTS Monaco sans choper des virus sur votre PC de
-                garage.
+                Petite bidouille du jour tres utile. Contrairement a ce qu'on
+                voit partout sur le net, l'activation de l'info reservoir ne se
+                fait pas via le "Variant Coding" sur mon modele de 2008. J'ai du
+                passer par l'envoi de commandes hexadecales manuelles pour
+                modifier directement les adresses dans l'EEPROM du combine
+                d'instruments (IC204).
               </p>
               <p>
-                L'objectif de ce blog est simple : je documente mes galeres et
-                mes reussites sur ma C200 Break de 2008. J'ai recemment reussi a
-                coder quelques options cachees et a stabiliser mon installation
-                OBD2.
+                C'est une manipulation plus technique car une erreur de saisie
+                dans les chaines HEX peut vite mettre le bazar, mais le resultat
+                est la : j'ai desormais la valeur exacte en temps reel. C'est
+                bien plus rassurant que la simple barre de graduation.
               </p>
-              <p>
-                Dans les prochains articles, je mettrai des tableaux clairs avec
-                les parametres de codage (Variant Coding) que j'ai testes et
-                valides. N'hesitez pas a suivre les mises a jour.
-              </p>
-              <a href="logiciels.html">[ Lire la suite ]</a>
+              <a href="article-coding.html">[ Voir le tutoriel complet ]</a>
             </div>
           </article>
 
           <article>
-            <h2>Changement du bloc optique : Astuces</h2>
+            <h2>Remplacement de la membrane du reniflard</h2>
             <div class="date">
-              Poste le 15 Avril 2026 par Admin | Categorie: Mecanique
+              Poste le 05 Avril 2026 par Admin | Categorie: Mecanique
             </div>
             <div class="article-content">
               <p>
-                Petite mise a jour du week-end. J'ai du demonter la face avant
-                pour acceder aux optiques. Sur la phase 1 (2008), il y a un clip
-                vicieux sous l'aile qu'il ne faut surtout pas forcer...
+                Ma C200 affiche desormais 400 000 km au compteur, et le
+                thermostat d'origine a fini par rendre l'ame. La voiture ne
+                chauffait plus au-dela de 60 degres, le moteur n'etait donc
+                jamais a sa temperature nominale. J'ai commande un thermostat
+                OEM Wahler sur AutoDoc pour environ 70 euros.
               </p>
-              <a href="#">[ Lire la suite ]</a>
+              <p>
+                Apres le changement (qui demande de vidanger un peu de liquide
+                de refroidissement), le moteur retrouve enfin ses 90 degres
+                stables. C'est fou la difference de souplesse moteur une fois
+                qu'il est a sa temperature nominale de fonctionnement.
+              </p>
+              <a
+                href="https://www.auto-doc.fr/frankberg/25731638"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ Lien de la piece ]</a
+              >
             </div>
           </article>
+
+          <article>
+            <h2>Remplacement du thermostat (OEM Wahler)</h2>
+            <div class="date">
+              Poste le 16 Decembre 2026 par Admin | Categorie: Mecanique
+            </div>
+            <div class="article-content">
+              <p>
+                Ma C200 affiche desormais 400 000 km au compteur, et le
+                thermostat d'origine a fini par rendre l'ame. La voiture ne
+                chauffait plus au-dela de 60 degres, le moteur n'etait donc
+                jamais a sa temperature nominale. J'ai commande un thermostat
+                OEM Wahler sur AutoDoc pour environ 70 euros.
+              </p>
+              <p>
+                Apres le changement (qui demande de vidanger un peu de liquide
+                de refroidissement), le moteur retrouve enfin ses 90 degres
+                stables. C'est fou la difference de souplesse moteur une fois
+                qu'il est a sa temperature nominale de fonctionnement.
+              </p>
+              <a
+                href="https://www.auto-doc.fr/wahler/1718989"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ Lien de la piece ]</a
+              >
+            </div>
+          </article>
+
+          <article>
+            <h2>Douille antivol perdue et retrouvee !</h2>
+            <div class="date">
+              Poste le 12 Avril 2026 par Admin | Categorie: Entretien
+            </div>
+            <div class="article-content">
+              <p>
+                Apres avoir change les silent blocs du berceau arriere (un gros
+                chantier !), je me suis rendu compte que j'avais perdu ma
+                douille antivol de jantes. Sans elle, impossible de demonter les
+                roues. La solution ? J'ai identifie mon empreinte par
+                elimination sur internet.
+              </p>
+              <p>
+                J'ai tente le coup sur AliExpress : 9 euros la douille avec la
+                bonne empreinte. Recue en 10 jours, elle s'adapte parfaitement.
+                Comme quoi, pas besoin de payer une fortune en concession
+                Mercedes pour un simple embout de demontage.
+              </p>
+              <a
+                href="https://fr.aliexpress.com/item/1005007694271073.html?spm=a2g0o.order_list.order_list_main.29.73a05e5bsWqCyb&gatewayAdapt=glo2fra"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ Lien de la piece ]</a
+              >
+            </div>
+          </article>
+
+          <article class="hidden-article">
+            <h2>Ecran Android 10" (AliExpress)</h2>
+            <div class="date">
+              Poste le 05 Avril 2026 par Admin | Categorie: Electronique
+            </div>
+            <div class="article-content">
+              <p>
+                Modernisation de l'interieur avec un ecran Android achete sur
+                AliExpress. Ce n'est pas juste une interface, c'est une tablette
+                complete qui remplace l'unite d'affichage d'origine tout en
+                gardant le menu Mercedes classique accessible.
+              </p>
+              <p>
+                L'installation permet d'avoir CarPlay et Android Auto sans fil.
+                Le montage prend environ 2 heures pour bien cacher les cables
+                derriere l'unite centrale NTG. On passe d'une voiture de 2008 a
+                une interface de 2024 tres simplement.
+              </p>
+              <a href="#">[ Voir les photos ]</a>
+            </div>
+          </article>
+
+          <button id="btn-more" onclick="showMore()">
+            Afficher plus d'articles...
+          </button>
         </main>
       </div>
 
       <footer>
         <p>Copyright 2026 - le garage de djidji</p>
+        <a
+          href="https://www.buymeacoffee.com/TON_PROFIL"
+          class="coffee-btn"
+          target="_blank"
+        >
+          <img
+            src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg"
+            width="15"
+            alt="Coffee"
+          />
+          Buy me a coffee
+        </a>
       </footer>
     </div>
 
