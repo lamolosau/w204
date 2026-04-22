@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logiciels & Diag - le garage de djidji</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Daily W204 (S204 / Break)</h1>
+      </header>
+
+      <div class="marquee-container">
+        <marquee scrollamount="4">
+          Bienvenue sur mon blog. Documentation, logiciels de diag, et mecanique
+          sur ma Mercedes C200 CDI (2008). Fini les forums obscurs, on
+          centralise tout ici.
+        </marquee>
+      </div>
+
+      <div class="layout">
+        <aside>
+          <h3>Navigation</h3>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li>
+              <a href="logiciels.html"><b>Logiciels & Diag</b></a>
+            </li>
+            <li><a href="tuto.html">Tuto</a></li>
+            <li><a href="#">Galerie Auto</a></li>
+          </ul>
+
+          <h3>Ma Voiture</h3>
+          <div class="voiture-infos">
+            <b>Modele:</b> W204 (S204 / Break)<br />
+            <b>Moteur:</b> C200 CDI<br />
+            <b>Annee:</b> 2008<br />
+            <b>Phase:</b> 1
+          </div>
+          <div class="photo-voiture">
+            <img src="img/photo.jpeg" alt="Ma C200 CDI Break" />
+          </div>
+        </aside>
+
+        <main>
+          <article>
+            <h2>L'Arsenal de Diagnostic Mercedes</h2>
+            <div class="date">
+              Derniere mise a jour : 22 Avril 2026 par Admin
+            </div>
+
+            <div class="article-content">
+              <div class="warning-box">
+                ATTENTION : Les logiciels proposes ici sont des versions
+                modifiees / pirates provenant de sources diverses sur le web.
+                Meme si je teste personnellement chaque fichier sur mon propre
+                PC de garage et que je n'ai rencontre aucun probleme (virus ou
+                bug) jusqu'a present, le risque zero n'existe pas. On n'est
+                jamais a l'abri d'un malware silencieux. Utilisez ces outils en
+                connaissance de cause et, si possible, sur un ordinateur dedie
+                qui ne contient pas vos donnees personnelles !
+              </div>
+              <p>
+                Oubliez les valises multimarques type Delphi ou Autocom. Pour
+                vraiment communiquer avec les calculateurs d'une W204, il faut
+                utiliser les outils constructeur. Voici un resume de ce que
+                j'utilise au garage.
+              </p>
+
+              <h3>1. Les Logiciels Indispensables</h3>
+              <table class="software-table">
+                <tr>
+                  <th>Nom du logiciel</th>
+                  <th>Utilite principale</th>
+                  <th>Niveau</th>
+                </tr>
+                <tr>
+                  <td><b>WIS / ASRA</b></td>
+                  <td>
+                    Carnet d'atelier complet pour presque tout les vehicule
+                    mercedes.
+                  </td>
+                  <td>Debutant</td>
+                </tr>
+                <tr>
+                  <td><b>EPC</b></td>
+                  <td>soon...</td>
+                  <td>Debutant</td>
+                </tr>
+                <tr>
+                  <td><b>Xentry Passthru</b></td>
+                  <td>
+                    Le logiciel officiel de base. Lecture/effacement des
+                    defauts, tests actionneurs, lecture des valeurs en temps
+                    reel. Indispensable.
+                  </td>
+                  <td>Debutant</td>
+                </tr>
+                <tr>
+                  <td><b>Vediamo 5.01.01</b></td>
+                  <td>
+                    Logiciel d'ingenierie (tres austere). Permet le Variant
+                    Coding (ajout d'options) et le flashage hors-ligne.
+                  </td>
+                  <td>Avance</td>
+                </tr>
+                <tr>
+                  <td><b>Vediamo 4.02.02</b></td>
+                  <td>
+                    Version encore plus ancienne mais plus compatible avec le
+                    passthru et donc les cables OpenPort 2.0.
+                  </td>
+                  <td>Avance</td>
+                </tr>
+              </table>
+
+              <h3>2. Quel materiel (Interface OBD) choisir ?</h3>
+              <p>
+                Pour la W204 (architecture CAN moderne), vous n'avez pas
+                forcement besoin d'un couteux SD Connect C4. Personnellement, je
+                tourne avec un cable <b>OpenPort 2.0 (Tactrix)</b>. Ca coute une
+                vingtaine d'euros sur internet et ca marche parfaitement avec
+                les versions "Passthru" des logiciels.
+              </p>
+
+              <h3>3. Fichiers CBF et SMR-D</h3>
+              <p>
+                Pour que Vediamo ou DTS Monaco puissent parler avec votre
+                voiture, ils ont besoin des fichiers de base de donnees de vos
+                calculateurs. Pour la S204 de 2008 (Phase 1), on utilise
+                principalement des fichiers <b>.CBF</b>.
+              </p>
+
+              <p>Exemple de calculateurs communs sur C200 CDI :</p>
+              <div class="code-block">
+                Moteur (OM646) : CR4.cbf<br />
+                Compteur (Instrument Cluster) : IC204.cbf<br />
+                Poste Radio / GPS : HU204.cbf
+              </div>
+              <br />
+              <p>
+                <a href="#"
+                  >[ Telecharger l'archive ZIP des fichiers CBF de base ]</a
+                >
+                <i>(Lien a venir)</i>
+              </p>
+            </div>
+          </article>
+        </main>
+      </div>
+
+      <footer>
+        <p>Copyright 2026 - le garage de djidji</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
